@@ -8,10 +8,9 @@ class LoginViewModel(
     private val userRepository: UserRepository
 ) : ViewModel() {
 
-    private val time = System.currentTimeMillis()
 
     fun getUserInfo(): Long {
-        return time
+        return userRepository.getUserData()
     }
 
 
